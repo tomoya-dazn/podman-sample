@@ -1,0 +1,9 @@
+- hosts: all
+  remote_user: vagrant
+  become: yes
+  become_method: sudo
+  roles:
+    - upgrade-all-packages
+    - install-development-tools
+    - install-podman
+    - install-python-library
